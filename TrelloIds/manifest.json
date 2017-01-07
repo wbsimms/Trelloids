@@ -1,0 +1,18 @@
+{
+    "author": "Wm. Barrett Simms (wbsimms.com)",
+    "description": "Shows Trello card id numbers",
+    "name": "Trelloids",
+    "version": "1.0",
+    "icons": {
+        "20": "icons/Trelloids-24.png",
+        "50": "icons/Trelloids-50.png"
+    },
+    "content_security_policy" : "script-src 'self'; object-src 'self'",
+    "permissions": [
+        "activeTab"
+    ],
+    "content_scripts": [{
+        "matches": ["*://trello.com/*"],
+        "js": ["trelloids.js"]
+    }]
+}
